@@ -14,7 +14,11 @@
     <!-- Links to our additional CSS styles -->
     <link rel="stylesheet" href="css/styles.css">
 
-    <title>Firstname Lastname's Resumé</title>
+    <title>Rodney Peerkhan's Resume</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
   </head>
   <!-- End of the head -->
 
@@ -43,14 +47,26 @@
             "w-100" makes sure the image takes the full width of the column it's in
             "rounded-circle" cuts a circle around the image
           -->
-          <img class="w-100 rounded-circle my-3" src="images/portrait.svg" alt="Portrait of Firstname Lastname" width="160">
+          <img class="w-100 rounded-circle my-3" src="images/portraitme.jpg" alt="Portrait of Firstname Lastname" width="160">
         </div>
         <!--
           A container to wrap around your name and tagline. Full-width at small size, then columns of increasing size.
         -->
         <div class="col-12 col-sm-8 col-md-9 col-lg-10 my-3 header-content">
-          <h1 class="fw-bolder">Firstname Lastname</h1>
-          <h5 class="fst-italic tagline">Your expert in creative marketing.</h5>
+          <div class="custom-header">
+          <h1 class="lora-uniquifier">Rodney Peerkhan</h1>
+        </div>
+        <hr>
+          <div class="custom-text">
+                <p class="lora-uniquifier"> <i>Currently in my second year of Creative Business at Breda University of Applied Sciences, where I’m working on a multitude of storytelling, graphic design and audio-visual production projects. At home, I keep myself busy with a personal project, namely an Interactive storytelling experience that has been going on for well over a year. 
+            <br></br>
+            My skills range from deep storytelling to an advanced understanding of various Adobe programmes such as Photoshop and Premiere Pro. I always maintain an organized work-structure that helps not only myself but also the team I’m working with. 
+            <br></br>
+            In my spare time I like to immerse myself in different forms of storytelling and media entertainment. Whether it’s reading books, ranging from fiction to philosophy, watching films, or playing video games, I’m always searching for new inspirations and perspectives that can broaden my horizon. 
+            <br></br>
+            Life imitates art far more than art imitates life
+            -Oscar Wilde, "The Decay of Lying"</i></p>
+          </div>
         </div>
       </header>
 
@@ -70,7 +86,8 @@
             <section> is yet another semantic element. The first one is for professional experience.
           -->
           <section class="my-3 biography-section">
-            <h2>Professional Experience</h2>
+            <div class="lora-uniquifier">
+            <h2 class="lora-uniquifier">Projects</h2>
             <!--
               Each list item (li) in the unordered list (ul) below will be one job.
               "list-unstyled" is a class that hides the bullet points of a list.
@@ -81,15 +98,15 @@
               <li class="biography-item row mb-2">
                 <!-- We're using a grid inside a grid so we can align logos and text -->
                 <div class="logo-container col-3 col-sm-2 col-md-3 col-lg-2">
-                  <img class="biography-logo mw-100 d-block mx-auto" src="images/employers/projector.svg" alt="Company logo" width="80">
+                  <img class="biography-logo mw-100 d-block mx-auto" src="images/projects/projector.svg" alt="Company logo" width="125">
                 </div>
                 <div class="biography-contents col-9 col-sm-10 col-md-9 col-lg-10">
-                  <h4>Production Assistant, Production Company</h4>
-                  <h5>April&ndash;July 2019</h5>
+                  <h4>Editor &ndash; <i>The Loods Hall of Fame (Concept) Documentary</i></h4>
+                  <h5>September&ndash;December 2024</h5>
                   <!-- Use the list below to talk about your achievements -->
                   <ul class="biography-details list-unstyled">
-                    <li>Coordinated shootings in studio and on location</li>
-                    <li>Liaised with local authorities and with suppliers</li>
+                    <li>Edited the final version of the concept video</li>
+                    <li>Aided the audio-department on-set</li>
                     <li>Part of my studies at Breda University of Applied Sciences</li>
                   </ul>
                 </div>
@@ -99,37 +116,42 @@
               <li class="biography-item row mb-2">
                 <div class="logo-container col-3 col-sm-2 col-md-3 col-lg-2">
                 <!-- We're using a grid inside a grid so we can align logos and text -->
-                  <img class="biography-logo mw-100 d-block mx-auto" src="images/employers/trolley.svg" alt="Company logo" width="80">
+                  <img class="biography-logo mw-100 d-block mx-auto" src="images/projects/eltalogo.svg" alt="Company logo" width="125">
                 </div>
                 <div class="biography-contents col-9 col-sm-10 col-md-9 col-lg-10">
-                  <h4>Supermarket Employee, Supermarket chain</h4>
-                  <h5>2018</h5>
+                  <h4>Interactive Narrative Director &ndash; <i>Elysian Tales</i></h4>
+                  <h5>2024 &ndash; Present</h5>
+                  <ul class="biography-details list-unstyled">
+                    <li>Creating tailored interactive storytelling live-experiences</li>
+                    <li>Using deep and rich storytelling, combined with audio and visual elements, to create an immersive world</li>
+                    <li>Serving as Executive Producer on 4 unique projects</li>
                   <!-- This entry doesn't have a list of achievements, but you can copy-paste the one from above -->
                 </div>
               </li>
-
+            </div>
             </ul>
           </section>
 
           <!-- We're done with jobs, let's move on to schools -->
 
           <section class="my-3 biography-section">
+            <div class="lora-uniquifier">
             <h2>Education</h2>
             <ul class="biography-list list-unstyled">
 
               <!-- Top item in education. And by "top", I mean a Bachelor in Creative Business at BUas. -->
               <li class="biography-item row mb-2">
-                <div class="logo-container col-3 col-sm-2 col-md-3 col-lg-2">
-                  <img class="biography-logo mw-100 d-block mx-auto" src="images/schools/logo-buas.svg" alt="School logo" width="120">
+                <div class="logo-container col-3 col-sm-2 col-md-3 col-lg-2 pt-2">
+                  <img class="biography-logo mw-100 d-block mx-auto" src="images/schools/logobuas.svg" alt="School logo" width="120">
                 </div>
                 <div class="biography-contents col-9 col-sm-10 col-md-9 col-lg-10">
                   <h4>BA in Creative Business, Breda University of Applied Sciences</h4>
-                  <h5>2018&nbsp;&ndash;&nbsp;now</h5>
+                  <h5>2023&nbsp;&ndash;&nbsp;now</h5>
                   <!-- Use the list below to talk about minors, exchanges, extra-curricular activities. -->
                   <ul class="biography-details list-unstyled">
                     <li>Member of the student participation council</li>
                     <li>Minor in resilient entrepreneurship</li>
-                    <li>Exchange with Bournemouth University</li>
+                    <li>Exchange with Prague School of Creative Communication </li>
                   </ul>
                 </div>
               </li>
@@ -137,13 +159,13 @@
               <!-- 2nd item in education -->
               <li class="biography-item row mb-2">
                 <div class="logo-container col-3 col-sm-2 col-md-3 col-lg-2">
-                  <img class="biography-logo mw-100 d-block mx-auto" src="images/schools/school.svg" alt="School logo" width="80">
+                  <img class="biography-logo mw-100 d-block mx-auto" src="images/schools/dongemondcollege.svg" alt="School logo" width="125">
                 </div>
                 <div class="biography-contents col-9 col-sm-10 col-md-9 col-lg-10">
-                  <h4>High School Diploma, City High School</h4>
-                  <h5>2018</h5>
+                  <h4>Havo Diploma, Dongemond College</h4>
+                  <h5>2018 &ndash; 2023</h5>
                   <ul class="biography-details list-unstyled">
-                    <li>Audiovisual media specialization</li>
+                    <li>Additional C2 Anglia Certificate</li>
                   </ul>
                 </div>
               </li>
@@ -160,9 +182,10 @@
           <aside> is also a semantic element.
         -->
         <aside class="col-md-5 col-lg-4 col-xl-3 resume-aside">
-
+          <div class="lora-uniquifier">
           <!-- The first block will be contact details -->
           <section class="my-3 aside-section">
+            
             <h2>Contact</h2>
             <!--
               A list of all your contact details.
@@ -172,30 +195,43 @@
             -->
             <ul class="contact-list list-unstyled">
               <li class="contact-item">
-                <a class="d-flex align-items-center" href="mailto:email@buas.nl" target="_blank">
+                <a class="d-flex align-items-center" href="mailto:230657@buas.nl" target="_blank">
                   <img class="contact-icon" src="images/icons/envelope.svg" alt="Email">
-                  email@buas.nl
+                  230657@buas.nl
                 </a>
               </li>
               <li class="contact-item">
-                <a class="d-flex align-items-center" href="https://facebook.com/" target="_blank">
-                  <img class="contact-icon" src="images/icons/facebook.svg" alt="Facebook">
-                  Facebook Profile
+                <a class="d-flex align-items-center" href="tel:+31642798717" target="_blank">
+                  <img class="contact-icon" src="images/icons/phone.svg" alt="Email">
+                  +31 6 42798717
                 </a>
               </li>
               <li class="contact-item">
-                <a class="d-flex align-items-center" href="https://github.com/" target="_blank">
-                  <img class="contact-icon" src="images/icons/github.svg" alt="LinkedIn">
+                <a class="d-flex align-items-center" href="https://www.linkedin.com/in/rodneypeerkhan/" target="_blank">
+                  <img class="contact-icon" src="images/icons/linkedin.svg" alt="LinkedIn">
+                  LinkedIn Profile
+                </a>
+              </li>
+              <li class="contact-item">
+                <a class="d-flex align-items-center" href="https://github.com/Q-P20" target="_blank">
+                  <img class="contact-icon" src="images/icons/github.svg" alt="GitHub">
                   GitHub Profile
                 </a>
               </li>
               <li class="contact-item">
-                <a class="d-flex align-items-center" href="https://www.tiktok.com/@bredauniversityas" target="_blank">
-                  <img class="contact-icon" src="images/icons/tiktok.svg" alt="Mobile Phone">
-                  TikTok @bredauniversityas
+                <a class="d-flex align-items-center" href="https://www.instagram.com/rodneypeerkhan/" target="_blank">
+                  <img class="contact-icon" src="images/icons/instagram.svg" alt="Personal Instagram">
+                  Instagram: Rodney Peerkhan
+                </a>
+              </li>
+              <li class="contact-item">
+                <a class="d-flex align-items-center" href="https://www.instagram.com/elysian__tales/" target="_blank">
+                  <img class="contact-icon" src="images/icons/instagram.svg" alt="Elysian Tales Instagram">
+                  Instagram: Elysian Tales
                 </a>
               </li>
             </ul>
+          
           </section>
 
           <!-- End of contact details, moving on to languages -->
@@ -220,22 +256,6 @@
                   <h6 class="position-absolute w-100 text-center top-0 py-1">Full proficiency</h6>
                 </div>
               </li>
-              <li class="language-item d-flex mb-1">
-                <h5 class="language-name w-50">Spanish</h5>
-                <div class="language-level w-50 border border-info border-2 position-relative">
-                  <!-- The div below is a progress bar. Choose between w-25, w-50, w-75 and w-100 to show your level of fluency -->
-                  <div class="language-progress position-absolute bg-warning h-100 w-50"></div>
-                  <h6 class="position-absolute w-100 text-center top-0 py-1">Advanced</h6>
-                </div>
-              </li>
-              <li class="language-item d-flex mb-1">
-                <h5 class="language-name w-50">German</h5>
-                <div class="language-level w-50 border border-info border-2 position-relative">
-                  <!-- The div below is a progress bar. Choose between w-25, w-50, w-75 and w-100 to show your level of fluency -->
-                  <div class="language-progress position-absolute bg-warning h-100 w-25"></div>
-                  <h6 class="position-absolute w-100 text-center top-0 py-1">Beginner</h6>
-                </div>
-              </li>
             </ul>
           </section>
 
@@ -244,9 +264,10 @@
           <section class="my-3 aside-section">
             <h2>Other Skills</h2>
             <ul class="skill-list list-unstyled">
-              <li class="skill-item">Team player</li>
-              <li class="skill-item">Microsoft Office Power User</li>
-              <li class="skill-item">Driving Licence</li>
+              <li class="skill-item">MS Office</li>
+              <li class="skill-item">Adobe CC</li>
+              <li class="skill-item">Creative Writing</li>
+              <li class="skill-item">Project Management</li>
             </ul>
           </section>
 
@@ -255,11 +276,13 @@
           <section class="my-3 aside-section">
             <h2>Interests &amp; Hobbies</h2>
             <ul class="skill-list list-unstyled">
-              <li class="skill-item">Formula 1 Driver</li>
-              <li class="skill-item">Netflix Binge-Watcher</li>
+              <li class="skill-item">Reading and writing</li>
+              <li class="skill-item">Watching Films</li>
+              <li class="skill-item">Playing video games</li>
+              <li class="skill-item">Socializing</li>
             </ul>
           </section>
-
+        </div>
         </aside>
       </div>
     </div>

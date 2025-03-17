@@ -8,21 +8,21 @@
 body {
 	font-family: Lato, "Open Sans", Roboto, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #202030;
-	background-color: #f8f8fc;
+	background-image:url(../images/background.jpg);
 }
 
 /* Styles for custom classes in the document. (There are more, try to find them out!) */
 
 .resume-header {
-    background-color: #e0f0ff;
+    background-color: #6f99bc;
 }
 
 .resume-main {
-	background-color: #fffefc;
+	background-color: #d0dddf;
 }
 
 .resume-aside {
-	background-color: #fff0e0;
+	background-color: #97bbca;
 }
 
 /* Styles for lists in the document */
@@ -48,4 +48,20 @@ body {
 .contact-icon {
 	height: 1em;
 	flex-basis: 1.4em;
+}
+
+.lora-uniquifier {
+	font-family: "Lora", serif;
+	font-optical-sizing: auto;
+	font-weight: weight;
+	font-style: normal;
+  }
+
+.custom-text {
+	color: rgb(56, 52, 111);
+	font-size: larger;
+}
+
+.custom-header {
+	color: rgb(209, 216, 221);
 }
